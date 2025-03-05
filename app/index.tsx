@@ -1,14 +1,7 @@
-import { Text, View } from "react-native";
-import { styles } from "../styles/auth.styles";
-import { Link } from "expo-router";
+import React from "react";
+import { Redirect } from "expo-router";
 
+// Redirect user to the feed page
 export default function Index() {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Hello World</Text>
-      <Link href="/notifications">
-        <Text>Go to Notifications</Text>
-      </Link>
-    </View>
-  );
+  return <Redirect href="/(tabs)" />;
 }
